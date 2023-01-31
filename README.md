@@ -1,6 +1,8 @@
 
 Point of the Project it to create a decentralized content creators dApp.  When a User signs up they will be granted a soulbound NFT that will allow the User to create content in the form of NFTs.
 
+----------------------------------------------------------ignore below this line---------------------------------------------------------------------
+
 
 Understand your requirements: Clearly define the problem you are trying to solve and what you are trying to achieve with your project. Identifying the scope of the project, the requirements, and the constraints can help you set realistic goals and objectives.
 
