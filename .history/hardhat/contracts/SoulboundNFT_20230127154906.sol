@@ -1,0 +1,65 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.17;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+
+contract SoulboundNFT is ERC721 {
+    // Globals
+    // Name: The name of the NFT
+    // Symbol: The symbol of the NFT
+    // TotalSupply: The total number of NFTs that will be minted
+    // balances: A mapping of addresses to the number of NFTs they own
+    // ownerOf: A mapping of token IDs to the address of the owner
+    // approved: A mapping of Token IDs to the address of the approved spender
+    // metadata: A mapping of Token IDs to the metadata URI
+    
+    // Mappings
+    // addressToUsername: A mapping of address to the user that is associated with teh address
+
+    // Structs:
+    // metadata: A struct that contains teh metadata URI and other metadata fields
+
+    // Events:
+    // Transer: Overridden
+    // Approval: Triggered when an adddress is approved to spend NFTs on behalf of another address
+    // ApprovalForAll: Triggered when an address is approved to spend NFTs on behalf of another address
+    // for all its NFTs
+    // Mint: Triggered when a new NFT it minted
+    
+    // Modifiers:
+    // onlyOwner: Restricts a function to only be called by the owner of the NFT
+    // only Approved: Restricts a funtion to only be called by the approved spender of the NFT
+    // whenNotPaused: Restricts a funtion to only be called when the contract is not paused
+    
+
+    // Functions:
+
+    // Mint() To mint new NFT to specific address and assign it a unique tokenID
+
+    // ownerOF(): To get the address that currently owns a specific tokenId
+
+    // totalSupply(): To get the total number of NFTs that have been minted
+
+    // balanceOf(): to get the number of NFTs an address owns
+
+    // approve(): To approve another address to spend NFTs on behalf of the owner
+    
+
+    // setApprovalForAll(): To approve another address to spend all NFTs on behalf of the owner
+
+    // Transfer(): To transfer NFTs from one address to another (ex: soul-bound)
+
+     // getUserName(): To get the user name associated with the specific address
+     
+     // setUserName(): To set the username associated with the specific address
+
+     // getMetadata(): To get the metadata URI associated with a specific tokenId
+
+     // setMetadata(): To set the metadata URI associated with a specific tokenId
+
